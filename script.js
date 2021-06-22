@@ -6,6 +6,7 @@ links.forEach((item)=>{
         let el = document.getElementById(item.getAttribute('data-link'));
         console.log(el);
         el.scrollIntoView({behavior:"smooth", block:"start"});
+        
         gsap.from(el,{opacity: -1, duration: 2, x:-100})
     })
 })
